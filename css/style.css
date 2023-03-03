@@ -1,0 +1,269 @@
+/* CSS Reset */
+
+*{
+    margin:0;
+    padding:0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.para {
+    font-size: 50px;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation Bar */
+
+
+/* Navigation Bar: Logo and Image */
+#logo{
+   margin: 10px 34px;
+ 
+   
+}
+
+#logo img{
+    height:75px;
+    margin: 3px 6px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar{
+    display:flex;
+    align-items: center;
+    position: absolute;
+    top:0px;
+
+}
+#navbar ul{
+    display:flex;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+#navbar ul li{
+  
+    list-style:none;
+    font: size 1.3rem;
+
+}
+#navbar ul li a{
+    color:white ;
+   display:block;
+  
+   padding:3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+   
+}
+
+#navbar ul li a:hover{
+    color:black ;
+    background-color: white;
+   
+}
+/* Home Section */
+#Home{
+     display:flex;
+     flex-direction: column;
+     padding:3px 150px;
+     height: 550px;
+     align-items: center;
+     justify-content: center;
+     
+}
+#Home::before{
+    content: "";
+    position: absolute;
+    top:0px;
+    left:0px;
+    background: url('../img/bg2.jpg')  no-repeat center center/cover;
+    height: 72%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#Home h1{
+    color:white;
+    text-align: center;
+}
+#Home p{
+    font-size:30px;
+    text-align: center;
+    color: white;
+    font-family: 'Acme', sans-serif;
+    background-color: black;
+}
+
+
+/* Services Section */
+
+#services{
+    margin:34px;
+    display:flex;
+}
+#services .box{
+   border:2px solid blue;
+    margin:3px 35px;
+    padding:34px;
+    border-radius: 28px;
+    background-color:#beb2b2 ;
+    /*margin-bottom: 20px;  */
+}
+#services .box img{
+    height: 111px;
+    padding-top: 50px;
+    margin:auto;
+    display: block;
+}
+.box{
+    font-family: 'Dosis', sans-serif;
+}
+.text-center{
+    align-items: center;
+    justify-content: center;
+}
+
+/*Clients Section */
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#clients img{
+    height:100px;
+}
+.client-item {
+    padding:34px;
+    padding-top: 70px;
+   
+}
+
+#client-section::before{
+    content: "";
+    position:absolute;
+    background: url('../img/bg9.jpg') no-repeat center center/cover;
+    width:100%;
+    height: 40%;
+    z-index: -1;
+    opacity:0.5 ;
+}
+
+/* Contact Us */
+
+  
+
+/*.h-primary-center{
+   align-items: center;
+   justify-content: center;
+   padding-top: 100px;
+   display:flex;
+   flex-direction: column;
+   padding:80px 150px;
+  font-size: ;
+ 
+} */
+#contact-box{
+    align-items: center;
+    justify-content: center;
+
+}
+#contact{
+    position: relative;
+    
+    
+}
+#contact::before{
+    content:"";
+    background: url('../img/contact2.jpg') no-repeat center center/cover;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity:0.6;
+  
+}
+#contact-box{
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ padding-bottom: 34px;
+}
+
+#contact-box input,textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 10px;
+    font-size:1.2rem;
+}
+
+#contact-box form{
+    width:40%;
+
+}
+
+#contact-box label{
+    font-size: 30px;;
+    
+}
+
+#contact2{
+    padding-top: 180px;
+}
+
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 15px;
+    padding-top: 30px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding:12px;
+    font-family: 'Josefin Sans', sans-serif;
+    
+} 
+.h-secondnary{
+    font-size: 2.8rem;
+    padding:12px;
+    font-family: 'Acme', sans-serif;
+}
+
+
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color: brown;
+    color: white;
+    margin:17px 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.center{
+    text-align: center;
+}
+/* Submit Button*/
+#form{
+    padding-top: 20px;
+}
